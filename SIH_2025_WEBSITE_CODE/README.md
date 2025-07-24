@@ -50,6 +50,9 @@ quick-setup.bat
 ### ⚠️ Important Note
 You **must** run `npm run build` before starting the development server. This creates the frontend build files that the Express server needs to serve your website.
 
+### 🔧 Having Issues?
+If you encounter any problems, check the **TROUBLESHOOTING.md** file for common solutions.
+
 ## Project Structure
 
 ```

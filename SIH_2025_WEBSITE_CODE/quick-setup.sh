@@ -13,6 +13,10 @@ if [ $? -ne 0 ]; then
 fi
 
 echo
+echo "Updating browser database..."
+npm run update-browsers
+
+echo
 echo "Building the frontend..."
 npm run build
 if [ $? -ne 0 ]; then

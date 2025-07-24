@@ -13,6 +13,10 @@ if %errorlevel% neq 0 (
 )
 
 echo.
+echo Updating browser database...
+call npm run update-browsers
+
+echo.
 echo Building the frontend...
 call npm run build
 if %errorlevel% neq 0 (
