@@ -114,7 +114,7 @@ export default function Home() {
                 </Card>
                 <Card className="bg-green-50 border-green-200">
                   <CardContent className="p-4 text-center">
-                    <div className="text-2xl font-bold text-green-600 mb-1">7</div>
+                    <div className="text-2xl font-bold text-green-600 mb-1">5</div>
                     <div className="text-sm text-gray-600">Expert Faculty Judges</div>
                   </CardContent>
                 </Card>
@@ -247,7 +247,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-2">Jury Panel</h4>
-                      <p className="text-gray-700">7 faculty members for evaluation</p>
+                      <p className="text-gray-700">5 faculty members for evaluation</p>
                     </div>
                   </CardContent>
                 </Card>

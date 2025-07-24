@@ -66,48 +66,48 @@ export default function Contacts() {
       <section className="section-padding bg-gray-50">
         <div className="container-max">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Student Coordinators</h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <Card className="bg-amber-50 border-amber-200 text-center">
-              <CardContent className="p-8">
-                <div className="w-24 h-24 bg-amber-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <User className="text-white h-10 w-10" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Rishab Jain</h3>
-                <p className="text-amber-600 font-medium mb-1">4th Year</p>
-                <p className="text-gray-600 text-sm mb-4">CSE (Data Science)</p>
-                <div className="space-y-2 text-sm text-gray-600">
-                  <div className="flex items-center justify-center">
-                    <Mail className="mr-2 h-4 w-4 text-amber-600" />
-                    <span>rishab.jain@student.edu</span>
-                  </div>
-                  <div className="flex items-center justify-center">
-                    <Phone className="mr-2 h-4 w-4 text-amber-600" />
-                    <span>+91 98765 43211</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-green-50 border-green-200 text-center">
-              <CardContent className="p-8">
-                <div className="w-24 h-24 bg-green-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <User className="text-white h-10 w-10" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Advait Joshi</h3>
-                <p className="text-green-600 font-medium mb-1">3rd Year</p>
-                <p className="text-gray-600 text-sm mb-4">CSE (Data Science)</p>
-                <div className="space-y-2 text-sm text-gray-600">
-                  <div className="flex items-center justify-center">
-                    <Mail className="mr-2 h-4 w-4 text-green-600" />
-                    <span>advait.joshi@student.edu</span>
-                  </div>
-                  <div className="flex items-center justify-center">
-                    <Phone className="mr-2 h-4 w-4 text-green-600" />
-                    <span>+91 98765 43212</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { name: "Rishab Jain", year: "4th Year", dept: "CSE (Data Science)", email: "rishab.jain@student.edu", phone: "+91 98765 43211", color: "amber" },
+              { name: "Advait Joshi", year: "3rd Year", dept: "CSE (Data Science)", email: "advait.joshi@student.edu", phone: "+91 98765 43212", color: "green" },
+              { name: "Arjun Kumar", year: "3rd Year", dept: "CSE (Data Science)", email: "arjun.kumar@student.edu", phone: "+91 98765 43213", color: "blue" },
+              { name: "Priya Singh", year: "4th Year", dept: "Computer Science", email: "priya.singh@student.edu", phone: "+91 98765 43214", color: "purple" },
+              { name: "Rohit Sharma", year: "3rd Year", dept: "Information Technology", email: "rohit.sharma@student.edu", phone: "+91 98765 43215", color: "red" },
+              { name: "Kavya Reddy", year: "4th Year", dept: "CSE (Data Science)", email: "kavya.reddy@student.edu", phone: "+91 98765 43216", color: "pink" },
+              { name: "Aditya Gupta", year: "3rd Year", dept: "Computer Science", email: "aditya.gupta@student.edu", phone: "+91 98765 43217", color: "indigo" },
+              { name: "Sneha Patel", year: "4th Year", dept: "Information Technology", email: "sneha.patel@student.edu", phone: "+91 98765 43218", color: "teal" },
+              { name: "Vikram Joshi", year: "3rd Year", dept: "CSE (Data Science)", email: "vikram.joshi@student.edu", phone: "+91 98765 43219", color: "orange" },
+              { name: "Ananya Verma", year: "4th Year", dept: "Computer Science", email: "ananya.verma@student.edu", phone: "+91 98765 43220", color: "cyan" },
+              { name: "Karthik Nair", year: "3rd Year", dept: "Information Technology", email: "karthik.nair@student.edu", phone: "+91 98765 43221", color: "lime" },
+              { name: "Divya Mehta", year: "4th Year", dept: "CSE (Data Science)", email: "divya.mehta@student.edu", phone: "+91 98765 43222", color: "violet" }
+            ].map((coordinator, index) => {
+              const colors = ["blue", "green", "amber", "purple", "red", "pink", "indigo", "teal", "orange", "cyan", "lime", "violet"];
+              const colorIndex = index % colors.length;
+              const color = colors[colorIndex];
+              
+              return (
+                <Card key={index} className={`bg-${color}-50 border-${color}-200 text-center hover:shadow-lg transition-shadow`}>
+                  <CardContent className="p-6">
+                    <div className={`w-20 h-20 bg-${color}-600 rounded-full mx-auto mb-4 flex items-center justify-center`}>
+                      <User className="text-white h-8 w-8" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-1">{coordinator.name}</h3>
+                    <p className={`text-${color}-600 font-medium text-sm mb-1`}>{coordinator.year}</p>
+                    <p className="text-gray-600 text-xs mb-3">{coordinator.dept}</p>
+                    <div className="space-y-1 text-xs text-gray-600">
+                      <div className="flex items-center justify-center">
+                        <Mail className={`mr-2 h-3 w-3 text-${color}-600`} />
+                        <span className="truncate">{coordinator.email}</span>
+                      </div>
+                      <div className="flex items-center justify-center">
+                        <Phone className={`mr-2 h-3 w-3 text-${color}-600`} />
+                        <span>{coordinator.phone}</span>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -116,15 +116,13 @@ export default function Contacts() {
       <section className="section-padding bg-white">
         <div className="container-max">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Faculty Jury Members</h2>
-          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {[
               { name: "Dr. Rajesh Kumar", dept: "Computer Science", specialization: "AI & Machine Learning" },
               { name: "Dr. Priya Sharma", dept: "Data Science", specialization: "Data Analytics" },
               { name: "Dr. Amit Singh", dept: "Information Technology", specialization: "Cybersecurity" },
               { name: "Dr. Sneha Patel", dept: "Computer Science", specialization: "Software Engineering" },
-              { name: "Dr. Ravi Gupta", dept: "Data Science", specialization: "Big Data" },
-              { name: "Dr. Anita Verma", dept: "Computer Science", specialization: "Database Systems" },
-              { name: "Dr. Vikram Reddy", dept: "Information Technology", specialization: "Web Technologies" }
+              { name: "Dr. Ravi Gupta", dept: "Data Science", specialization: "Big Data" }
             ].map((faculty, index) => (
               <Card key={index} className="bg-gray-50 border-gray-200 text-center hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
