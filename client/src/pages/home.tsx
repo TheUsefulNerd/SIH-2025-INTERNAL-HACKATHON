@@ -43,16 +43,16 @@ export default function Home() {
         
         <div className="relative container-max section-padding py-20 lg:py-28">
           <div className="text-center max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              Smart India Hackathon
+              <span className="block text-amber-300">Internal Selection</span>
+            </h1>
             <div className="mb-6">
               <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-amber-500 text-white">
                 <Calendar className="mr-2 h-4 w-4" />
                 August 14th, 21st, 22nd 2025
               </span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Smart India Hackathon
-              <span className="block text-amber-300">Internal Selection</span>
-            </h1>
             <p className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed">
               Join our internal hackathon to represent our college in SIH 2025. 
               Showcase your innovation, collaborate with peers, and build solutions that matter.
@@ -253,17 +253,7 @@ export default function Home() {
                   </CardContent>
                 </Card>
 
-                <Card className="bg-amber-50 border-amber-200">
-                  <CardContent className="flex items-start space-x-4 p-6">
-                    <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <User className="text-white h-6 w-6" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">Event Coordinators</h4>
-                      <p className="text-gray-700">Rishab Jain (4th Year/CSE Data Science), Advait Joshi (3rd Year/CSE Data Science)</p>
-                    </div>
-                  </CardContent>
-                </Card>
+
               </div>
             </div>
 
@@ -298,16 +288,7 @@ export default function Home() {
                 </CardContent>
               </Card>
 
-              <div className="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-200">
-                <p className="text-gray-700 italic text-center">
-                  "We request your kind approval and support to conduct this event successfully."
-                </p>
-                <div className="mt-4 text-center text-sm text-gray-600">
-                  <p><strong>Sincerely,</strong></p>
-                  <p>S. Jyotsna (Faculty Coordinator)</p>
-                  <p>Rishab Jain (IV DS) & Advait Joshi (III DS)</p>
-                </div>
-              </div>
+
             </div>
           </div>
         </div>

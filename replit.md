@@ -6,6 +6,14 @@ This is a full-stack TypeScript application built with React (frontend) and Expr
 
 Preferred communication style: Simple, everyday language.
 
+## Recent Changes (January 2025)
+- Created SIH 2025 internal hackathon website with modern, eye-friendly design
+- Removed budget section and industry professionals from jury as per user request
+- Updated jury to include 7 faculty members only
+- Created separate contacts page with circular profile placeholders
+- Moved date badge below main heading in hero section
+- Removed formal signatures and event coordinators section from requirements
+
 # System Architecture
 
 ## Frontend Architecture
