@@ -57,14 +57,10 @@ export default function Home() {
               Join our internal hackathon to represent our college in SIH 2025. 
               Showcase your innovation, collaborate with peers, and build solutions that matter.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex justify-center">
               <Button className="btn-primary text-lg px-8 py-4">
                 <Trophy className="mr-2 h-5 w-5" />
                 Register Now
-              </Button>
-              <Button variant="outline" className="btn-secondary text-lg px-8 py-4">
-                <Target className="mr-2 h-5 w-5" />
-                Learn More
               </Button>
             </div>
             <div className="mt-12 text-sm text-blue-100">
