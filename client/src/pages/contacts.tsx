@@ -20,7 +20,7 @@ export default function Contacts() {
             </Link>
             <div className="hidden md:flex space-x-8">
               <Link href="/" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</Link>
-              <span className="text-blue-600 font-medium">Contacts</span>
+              <span className="text-blue-600 font-medium">Coordinator Details</span>
             </div>
           </div>
         </div>
@@ -29,7 +29,7 @@ export default function Contacts() {
       {/* Header */}
       <section className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-16">
         <div className="container-max text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Information</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Coordinator Details</h1>
           <p className="text-xl text-blue-100">Meet our organizers and faculty jury members</p>
         </div>
       </section>
@@ -145,7 +145,7 @@ export default function Contacts() {
       <section className="section-padding bg-blue-50">
         <div className="container-max">
           <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">Get In Touch</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">Coordinator Details</h2>
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="bg-white border-gray-200">
                 <CardContent className="p-6 text-center">

@@ -23,7 +23,7 @@ export default function Home() {
               <a href="#overview" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Overview</a>
               <a href="#schedule" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Schedule</a>
               <a href="#requirements" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Requirements</a>
-              <Link href="/contacts" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Contacts</Link>
+              <Link href="/contacts" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Coordinator Details</Link>
             </div>
           </div>
         </div>
@@ -57,15 +57,18 @@ export default function Home() {
               Join our internal hackathon to represent our college in SIH 2025. 
               Showcase your innovation, collaborate with peers, and build solutions that matter.
             </p>
-            <div className="flex justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button className="btn-primary text-lg px-8 py-4">
                 <Trophy className="mr-2 h-5 w-5" />
                 Register Now
               </Button>
+              <div className="flex items-center bg-white bg-opacity-20 backdrop-blur-sm rounded-lg px-4 py-2 text-sm text-white border border-white border-opacity-30">
+                <User className="mr-2 h-4 w-4" />
+                <span><strong>SPOC:</strong> Mrs. S. Jyotsna</span>
+              </div>
             </div>
             <div className="mt-12 text-sm text-blue-100">
               <p><strong>Organized by:</strong> Department of CSE (Data Science)</p>
-              <p><strong>Submitted to:</strong> The Principal</p>
             </div>
           </div>
         </div>
@@ -303,7 +306,7 @@ export default function Home() {
             <p className="text-gray-400 mb-6">Department of CSE (Data Science)</p>
             <div className="flex justify-center space-x-8">
               <Link href="/contacts" className="text-gray-400 hover:text-white transition-colors">
-                Contact Information
+                Coordinator Details
               </Link>
             </div>
           </div>
