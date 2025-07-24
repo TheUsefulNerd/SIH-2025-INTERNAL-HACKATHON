@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
   --background: hsl(0, 0%, 98%);
@@ -80,11 +80,11 @@
   }
 
   .btn-primary {
-    @apply bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg;
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg border-0;
   }
 
   .btn-secondary {
-    @apply border-2 border-white text-white hover:bg-white hover:text-blue-700 font-semibold px-6 py-3 rounded-xl transition-all duration-300;
+    @apply border-2 border-white text-white hover:bg-white hover:text-blue-700 font-semibold px-6 py-3 rounded-xl transition-all duration-300 bg-transparent;
   }
 
   .profile-image {
