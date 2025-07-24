@@ -19,7 +19,13 @@ This guide will help you deploy the SIH 2025 Internal Hackathon website on vario
    npm install
    ```
 
-3. **Start development server**
+3. **Build the frontend first (IMPORTANT)**
+   ```bash
+   npm run build
+   ```
+   This creates the `dist/public` folder that the server needs.
+
+4. **Start development server**
    ```bash
    npm run dev
    ```
@@ -28,9 +34,12 @@ This guide will help you deploy the SIH 2025 Internal Hackathon website on vario
 
 ### Production Build
 ```bash
+npm install
 npm run build
 npm start
 ```
+
+**Note**: You must run `npm run build` before starting the server, as it creates the frontend build files that the Express server serves.
 
 ## Deployment Options
 

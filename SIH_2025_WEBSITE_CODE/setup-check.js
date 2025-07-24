@@ -56,8 +56,10 @@ if (allFilesPresent) {
   console.log('✅ All files and dependencies are present!');
   console.log('\n📋 Next steps:');
   console.log('1. Run: npm install');
-  console.log('2. Run: npm run dev');
-  console.log('3. Open: http://localhost:5000');
+  console.log('2. Run: npm run build (IMPORTANT - Build frontend first!)');
+  console.log('3. Run: npm run dev');
+  console.log('4. Open: http://localhost:5000');
+  console.log('\nAlternatively, run quick-setup.bat (Windows) or ./quick-setup.sh (Mac/Linux)');
   console.log('\n📖 For deployment instructions, see DEPLOYMENT_GUIDE.md');
 } else {
   console.log('❌ Some files or dependencies are missing. Please check the setup.');

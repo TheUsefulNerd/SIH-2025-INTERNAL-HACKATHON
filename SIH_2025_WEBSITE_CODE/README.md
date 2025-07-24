@@ -13,21 +13,42 @@ A modern, eye-friendly website for the Smart India Hackathon 2025 internal selec
 
 ## Quick Start
 
+### Option 1: Use Setup Script (Recommended)
+**Windows:**
+```bash
+quick-setup.bat
+```
+
+**Mac/Linux:**
+```bash
+./quick-setup.sh
+```
+
+### Option 2: Manual Setup
 1. **Install Dependencies**
    ```bash
    npm install
    ```
 
-2. **Run Development Server**
+2. **Build Frontend (IMPORTANT - Must do this first)**
+   ```bash
+   npm run build
+   ```
+
+3. **Run Development Server**
    ```bash
    npm run dev
    ```
+   Website will be available at `http://localhost:5000`
 
-3. **Build for Production**
+4. **Build for Production**
    ```bash
    npm run build
    npm start
    ```
+
+### ⚠️ Important Note
+You **must** run `npm run build` before starting the development server. This creates the frontend build files that the Express server needs to serve your website.
 
 ## Project Structure
 
