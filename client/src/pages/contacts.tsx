@@ -81,16 +81,16 @@ export default function Contacts() {
               { name: "Karthik Nair", year: "3rd Year", dept: "Information Technology", phone: "+91 98765 43221" },
               { name: "Divya Mehta", year: "4th Year", dept: "CSE (Data Science)", phone: "+91 98765 43222" }
             ].map((coordinator, index) => (
-              <Card key={index} className="bg-blue-50 border-blue-200 text-center hover:shadow-md transition-shadow">
+              <Card key={index} className="bg-white border-gray-200 text-center hover:shadow-md transition-shadow">
                 <CardContent className="p-4">
-                  <div className="w-16 h-16 bg-blue-600 rounded-full mx-auto mb-3 flex items-center justify-center">
-                    <User className="text-white h-6 w-6" />
+                  <div className="w-16 h-16 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center">
+                    <User className="text-gray-400 h-6 w-6" />
                   </div>
-                  <h3 className="text-sm font-semibold text-gray-900 mb-1">{coordinator.name}</h3>
-                  <p className="text-blue-600 font-medium text-xs mb-1">{coordinator.year}</p>
-                  <p className="text-gray-600 text-xs mb-2">{coordinator.dept}</p>
+                  <h3 className="text-sm font-bold text-gray-900 mb-1">{coordinator.name}</h3>
+                  <p className="text-gray-600 font-medium text-xs mb-1">{coordinator.year}</p>
+                  <p className="text-gray-500 text-xs mb-2">{coordinator.dept}</p>
                   <div className="flex items-center justify-center text-xs text-gray-600">
-                    <Phone className="mr-1 h-3 w-3 text-blue-600" />
+                    <Phone className="mr-1 h-3 w-3 text-gray-500" />
                     <span>{coordinator.phone}</span>
                   </div>
                 </CardContent>
