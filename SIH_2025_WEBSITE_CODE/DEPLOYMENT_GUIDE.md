@@ -43,28 +43,55 @@ npm start
 
 ## Deployment Options
 
-### 1. Vercel (Recommended)
+### Option A: Full-Stack Deployment (Original Project)
+
+#### 1. Vercel (Recommended for Full-Stack)
 1. Push your code to GitHub/GitLab
 2. Connect your repository to Vercel
+3. Vercel will automatically detect the configuration from `vercel.json`
+4. Build Command: `npm run build`
+5. The `vercel.json` file handles routing automatically
+
+#### 2. Railway/Render (Full-Stack)
+1. Connect your GitHub repository
+2. Set build command: `npm run build`
+3. Set start command: `npm start`
+4. Ensure Node.js 18+ is selected
+
+### Option B: Static-Only Deployment (Simpler)
+
+If you encounter deployment issues with the full-stack version, create a static-only version:
+
+```bash
+node static-deploy.js
+```
+
+This creates a `sih-2025-static` folder with a simplified version perfect for:
+
+#### 1. GitHub Pages (Static)
+1. Use the static version created by `static-deploy.js`
+2. Push to GitHub repository
+3. Enable GitHub Actions (`.github/workflows/deploy.yml` included)
+4. Automatic deployment on push to main branch
+
+#### 2. Netlify (Static)
+1. Use the static version
+2. Connect GitHub repo to Netlify
 3. Build Command: `npm run build`
-4. Output Directory: `dist/public`
-5. Install Command: `npm install`
+4. Publish Directory: `dist`
+5. The `netlify.toml` file handles configuration
 
-### 2. Netlify
-1. Push your code to GitHub/GitLab
-2. Connect to Netlify
-3. Build Command: `npm run build`
-4. Publish Directory: `dist/public`
+#### 3. Vercel (Static)
+1. Use the static version
+2. Connect GitHub repo to Vercel
+3. Framework: Vite
+4. Build Command: `npm run build`
+5. Output Directory: `dist`
 
-### 3. GitHub Pages
-1. Build the project: `npm run build`
-2. Copy contents of `dist/public` to your GitHub Pages repository
-3. Ensure `index.html` is in the root
-
-### 4. Traditional Web Hosting
-1. Run `npm run build`
-2. Upload contents of `dist/public` folder to your web hosting provider
-3. Ensure your hosting supports single-page applications (SPA)
+#### 4. Traditional Web Hosting (Static)
+1. Use the static version
+2. Run `npm run build`
+3. Upload contents of `dist` folder to your web hosting provider
 
 ## Environment Configuration
 
