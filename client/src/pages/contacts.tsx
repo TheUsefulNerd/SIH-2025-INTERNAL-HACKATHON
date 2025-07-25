@@ -34,26 +34,22 @@ export default function Contacts() {
         </div>
       </section>
 
-      {/* Faculty Coordinator */}
+      {/* SPOC */}
       <section className="section-padding bg-white">
         <div className="container-max">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Faculty Coordinator</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">SPOC</h2>
           <div className="max-w-md mx-auto">
             <Card className="bg-blue-50 border-blue-200 text-center">
               <CardContent className="p-8">
                 <div className="w-24 h-24 bg-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <User className="text-white h-10 w-10" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">S. Jyotsna</h3>
-                <p className="text-blue-600 font-medium mb-4">Faculty Coordinator</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">-</h3>
+                <p className="text-blue-600 font-medium mb-4">Assistant Professor</p>
                 <div className="space-y-2 text-sm text-gray-600">
                   <div className="flex items-center justify-center">
-                    <Mail className="mr-2 h-4 w-4 text-blue-600" />
-                    <span>s.jyotsna@college.edu</span>
-                  </div>
-                  <div className="flex items-center justify-center">
                     <Phone className="mr-2 h-4 w-4 text-blue-600" />
-                    <span>+91 98765 43210</span>
+                    <span> - </span>
                   </div>
                 </div>
               </CardContent>
@@ -62,26 +58,59 @@ export default function Contacts() {
         </div>
       </section>
 
+      {/* Faculty Coordinators */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-max">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Faculty Coordinators</h2>
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {[
+              { name: "Mrs. S. Jyotsna", designation: "Assistant Professor", dept: "CSE (Data Science)", phone: "+91 94944 09907" },
+              { name: "-", designation: "Assistant Professor",  dept: "CSE (AIML)", phone: "-" },
+              { name: "-", designation: "Assistant Professor", dept: "CSE (Cybersecurity)", phone: "-" },
+              { name: "-", designation: "Assistant Professor",  dept: "CSE", phone: "-" },
+              { name: "-", designation: "Assistant Professor", dept: "CSE (IOT)", phone: "-" },
+              { name: "-", designation: "Assistant Professor", dept: "CSE (AI&DS)", phone: "-" },
+             
+              
+            ].map((coordinator, index) => (
+              <Card key={index} className="bg-yellow-100 border-gray-200 text-center hover:shadow-md transition-shadow">
+                <CardContent className="p-4">
+                  <div className="w-16 h-16 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center">
+                    <User className="text-gray-500 h-6 w-6" />
+                  </div>
+                  <h3 className="text-sm font-bold text-gray-900 mb-1">{coordinator.name}</h3>
+                      <p className="text-gray-800 text-xs mb-2">{coordinator.dept}</p>
+                      <p className="text-gray-900 font-medium text-xs mb-1">{coordinator.designation}</p>
+
+                  <div className="flex items-center justify-center text-xs text-gray-600">
+                    <Phone className="mr-1 h-3 w-3 text-gray-500" />
+                    <span>{coordinator.phone}</span>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      
+
       {/* Student Coordinators */}
       <section className="section-padding bg-gray-50">
         <div className="container-max">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Student Coordinators</h2>
           <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4">
             {[
-              { name: "Rishab Jain", year: "4th Year", dept: "CSE (Data Science)", phone: "+91 98765 43211" },
-              { name: "Advait Joshi", year: "3rd Year", dept: "CSE (Data Science)", phone: "+91 98765 43212" },
-              { name: "Arjun Kumar", year: "3rd Year", dept: "CSE (Data Science)", phone: "+91 98765 43213" },
-              { name: "Priya Singh", year: "4th Year", dept: "Computer Science", phone: "+91 98765 43214" },
-              { name: "Rohit Sharma", year: "3rd Year", dept: "Information Technology", phone: "+91 98765 43215" },
-              { name: "Kavya Reddy", year: "4th Year", dept: "CSE (Data Science)", phone: "+91 98765 43216" },
-              { name: "Aditya Gupta", year: "3rd Year", dept: "Computer Science", phone: "+91 98765 43217" },
-              { name: "Sneha Patel", year: "4th Year", dept: "Information Technology", phone: "+91 98765 43218" },
-              { name: "Vikram Joshi", year: "3rd Year", dept: "CSE (Data Science)", phone: "+91 98765 43219" },
-              { name: "Ananya Verma", year: "4th Year", dept: "Computer Science", phone: "+91 98765 43220" },
-              { name: "Karthik Nair", year: "3rd Year", dept: "Information Technology", phone: "+91 98765 43221" },
-              { name: "Divya Mehta", year: "4th Year", dept: "CSE (Data Science)", phone: "+91 98765 43222" }
+              { name: "Rishab Jain", year: "4th Year", dept: "CSE (Data Science)", phone: "+91 97045 26359" },
+              { name: "Manchikanti Prachatih", year: "3rd Year", dept: "CSE (Data Science)", phone: "+91 83748 65356" },
+              { name: "-", year: "-", dept: "CSE (Cybersecurity)", phone: "-" },
+              { name: "-", year: "-", dept: "CSE", phone: "-" },
+              { name: "-", year: "-", dept: "CSE(IOT)", phone: "-" },
+              { name: "-", year: "-", dept: "CSE (AI&DS)", phone: "-" },
+              { name: "-", year: "-", dept: "CSE(AIML)", phone: "-" },
+              
             ].map((coordinator, index) => (
-              <Card key={index} className="bg-white border-gray-200 text-center hover:shadow-md transition-shadow">
+              <Card key={index} className="bg-lime-100 border-gray-200 text-center hover:shadow-md transition-shadow">
                 <CardContent className="p-4">
                   <div className="w-16 h-16 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center">
                     <User className="text-gray-400 h-6 w-6" />
@@ -106,11 +135,11 @@ export default function Contacts() {
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Faculty Jury Members</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {[
-              { name: "Dr. Rajesh Kumar", dept: "Computer Science", specialization: "AI & Machine Learning" },
-              { name: "Dr. Priya Sharma", dept: "Data Science", specialization: "Data Analytics" },
-              { name: "Dr. Amit Singh", dept: "Information Technology", specialization: "Cybersecurity" },
-              { name: "Dr. Sneha Patel", dept: "Computer Science", specialization: "Software Engineering" },
-              { name: "Dr. Ravi Gupta", dept: "Data Science", specialization: "Big Data" }
+              { name: "-", dept: "CSE", Designation: "-" },
+              { name: "-", dept: "CSE", Designation: "-" },
+              { name: "-", dept: "CSE", Designation: "-" },
+              { name: "-", dept: "CSE", Designation: "-" },
+              { name: "-", dept: "CSE", Designation: "-" }
             ].map((faculty, index) => (
               <Card key={index} className="bg-gray-50 border-gray-200 text-center hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
@@ -119,7 +148,7 @@ export default function Contacts() {
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-1">{faculty.name}</h3>
                   <p className="text-blue-600 font-medium text-sm mb-1">{faculty.dept}</p>
-                  <p className="text-gray-600 text-xs">{faculty.specialization}</p>
+                  <p className="text-gray-600 text-xs">{faculty.Designation}</p>
                 </CardContent>
               </Card>
             ))}
@@ -136,9 +165,9 @@ export default function Contacts() {
               <Card className="bg-white border-gray-200">
                 <CardContent className="p-6 text-center">
                   <Mail className="text-blue-600 h-8 w-8 mx-auto mb-4" />
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Email Us</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Contact your Department Faculty Coordinators</h3>
                   <p className="text-gray-600 text-sm mb-2">For any queries regarding the hackathon</p>
-                  <p className="text-blue-600 font-medium">sih2025@college.edu</p>
+                  <p className="text-blue-600 font-medium">SVIT</p>
                 </CardContent>
               </Card>
 
@@ -147,7 +176,8 @@ export default function Contacts() {
                   <Phone className="text-green-600 h-8 w-8 mx-auto mb-4" />
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Call Us</h3>
                   <p className="text-gray-600 text-sm mb-2">Contact our coordinators directly</p>
-                  <p className="text-green-600 font-medium">+91 98765 43210</p>
+                  <p className="text-blue-600 font-medium">SVIT</p>
+
                 </CardContent>
               </Card>
             </div>

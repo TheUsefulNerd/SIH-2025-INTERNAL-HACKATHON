@@ -1,7 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Calendar, Users, Target, Building, Clock, Trophy, CheckCircle, Code, Presentation, Laptop, Star, Gavel, User } from "lucide-react";
+import { Calendar, Users, Target, Building, Clock, Trophy, CheckCircle, Code, Presentation, Laptop, Star, Gavel, User, Award } from "lucide-react";
 import { Link } from "wouter";
+import heroImage from './images/sih-image-hero.png';
+import { ListChecks } from "lucide-react";
+
+
+
 
 export default function Home() {
   return (
@@ -33,14 +38,15 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-600 to-blue-700 text-white overflow-hidden">
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-        <div 
-          className="absolute inset-0 opacity-30" 
+        <div
+          className="absolute inset-0 opacity-30"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')",
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
+            backgroundImage: `url(${heroImage})`,
+            backgroundSize: 'fit',
+            backgroundPosition: 'cover'
           }}
         />
+
         
         <div className="relative container-max section-padding py-20 lg:py-28">
           <div className="text-center max-w-4xl mx-auto">
@@ -55,19 +61,19 @@ export default function Home() {
               </span>
             </div>
             <p className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed">
-              Join our internal hackathon to represent our college in SIH 2025. 
-              Showcase your innovation, collaborate with peers, and build solutions that matter.
+              Join our Internal Hackathon to represent SVIT in SIH 2025. 
+              Showcase your Innovation, Collaborate with Peers, and Build Solutions that matter.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a href="#registration">
                 <Button className="btn-primary text-lg px-8 py-4">
                   <Trophy className="mr-2 h-5 w-5" />
-                  Register Now
+                  Register Now!
                 </Button>
               </a>
               <div className="flex items-center bg-white bg-opacity-20 backdrop-blur-sm rounded-lg px-4 py-2 text-sm text-white border border-white border-opacity-30">
                 <User className="mr-2 h-4 w-4" />
-                <span><strong>SPOC:</strong> Mrs. S. Jyotsna</span>
+                <span><strong>SPOC:</strong> - </span>
               </div>
             </div>
             <div className="mt-12 text-sm text-blue-100">
@@ -78,54 +84,68 @@ export default function Home() {
       </section>
 
       {/* Overview Section */}
-      <section id="overview" className="section-padding bg-white">
-        <div className="container-max">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Hackathon Overview</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our internal hackathon is designed to identify, mentor, and prepare the best teams to represent our college in SIH 2025
+<section id="overview" className="section-padding bg-white">
+  <div className="container-max">
+    <div className="text-center mb-12">
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Hackathon Overview</h2>
+      <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        Our internal hackathon is designed to identify, mentor, and prepare the best teams to represent our college in SIH 2025
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <img 
+          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" 
+          alt="Students collaborating on hackathon project" 
+          className="rounded-2xl shadow-xl w-full"
+        />
+      </div>
+      <div className="space-y-6">
+        <Card className="bg-gradient-to-r from-blue-50 to-blue-50 border-blue-200">
+          <CardContent className="p-6">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-3 flex items-center">
+              <Target className="text-blue-600 mr-3 h-6 w-6" />
+              Objective
+            </h3>
+            <p className="text-gray-700 leading-relaxed">
+              The internal hackathon is aimed at identifying, mentoring, and shortlisting top-performing teams to represent our college in the upcoming Smart India Hackathon (SIH) 2025. The hackathon will also promote collaboration, critical thinking, and solution-driven innovation among students.
             </p>
-          </div>
+          </CardContent>
+        </Card>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <img 
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" 
-                alt="Students collaborating on hackathon project" 
-                className="rounded-2xl shadow-xl w-full"
-              />
-            </div>
-            <div className="space-y-6">
-              <Card className="bg-gradient-to-r from-blue-50 to-blue-50 border-blue-200">
-                <CardContent className="p-6">
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-3 flex items-center">
-                    <Target className="text-blue-600 mr-3 h-6 w-6" />
-                    Objective
-                  </h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    The internal hackathon is aimed at identifying, mentoring, and shortlisting top-performing teams to represent our college in the upcoming Smart India Hackathon (SIH) 2025. The hackathon will also promote collaboration, critical thinking, and solution-driven innovation among students.
-                  </p>
-                </CardContent>
-              </Card>
+        <Card className="bg-gradient-to-r from-purple-50 to-purple-50 border-purple-200">
+          <CardContent className="p-6">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-3 flex items-center">
+              <ListChecks className="text-purple-600 mr-3 h-6 w-6" />
+              Rules
+            </h3>
+            <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-1">
+              <li>Follow the official SIH PPT format. It will be shared in the WhatsApp group by the admins.</li>
+              <li>AI tools are allowed. Use them responsibly and give credit if needed.</li>
+            </ul>
+          </CardContent>
+        </Card>
 
-              <div className="grid grid-cols-2 gap-4">
-                <Card className="bg-amber-50 border-amber-200">
-                  <CardContent className="p-4 text-center">
-                    <div className="text-2xl font-bold text-amber-600 mb-1">3</div>
-                    <div className="text-sm text-gray-600">Days of Competition</div>
-                  </CardContent>
-                </Card>
-                <Card className="bg-green-50 border-green-200">
-                  <CardContent className="p-4 text-center">
-                    <div className="text-2xl font-bold text-green-600 mb-1">5</div>
-                    <div className="text-sm text-gray-600">Expert Faculty Judges</div>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
-          </div>
+        <div className="grid grid-cols-2 gap-4">
+          <Card className="bg-amber-50 border-amber-200">
+            <CardContent className="p-4 text-center">
+              <div className="text-2xl font-bold text-amber-600 mb-1">3</div>
+              <div className="text-sm text-gray-600">Days of Competition</div>
+            </CardContent>
+          </Card>
+          <Card className="bg-green-50 border-green-200">
+            <CardContent className="p-4 text-center">
+              <div className="text-2xl font-bold text-green-600 mb-1">5</div>
+              <div className="text-sm text-gray-600">Expert Faculty Judges</div>
+            </CardContent>
+          </Card>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Schedule Section */}
       <section id="schedule" className="section-padding bg-gray-50">
@@ -216,6 +236,10 @@ export default function Home() {
                     <Star className="text-green-500 mr-3 h-5 w-5" />
                     Evaluation based on execution, technical depth, and presentation
                   </p>
+                  <p className="flex items-center">
+                    <Award className="text-green-500 mr-3 h-5 w-5" />
+                    Valedictory Ceremony
+                  </p>
                 </div>
               </CardContent>
             </Card>
@@ -247,13 +271,13 @@ export default function Home() {
                         <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                           <span className="text-white text-xs font-bold">1</span>
                         </div>
-                        <p className="text-gray-700">Form your team of 3-6 members from CSE/IT departments</p>
+                        <p className="text-gray-700">Form your team of 6 members - Minimum 1 girl is mandatory - All girls teams are highly appreciated</p>
                       </div>
                       <div className="flex items-start space-x-3">
                         <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                           <span className="text-white text-xs font-bold">2</span>
                         </div>
-                        <p className="text-gray-700">Fill out the registration form with all team member details</p>
+                        <p className="text-gray-700">Fill out the registration form with all team member details - Inter department teams are permitted</p>
                       </div>
                       <div className="flex items-start space-x-3">
                         <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -265,7 +289,7 @@ export default function Home() {
                         <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                           <span className="text-white text-xs font-bold">4</span>
                         </div>
-                        <p className="text-gray-700">Wait for confirmation and further instructions</p>
+                        <p className="text-gray-700">Wait for confirmation and further instructions - Team Leaders must join the whatsapp group mentioned in the google form.</p>
                       </div>
                     </div>
                   </CardContent>
@@ -279,10 +303,17 @@ export default function Home() {
                   <p className="text-blue-100 mb-6">
                     Click below to access the official registration form and begin your journey to SIH 2025
                   </p>
-                  <Button className="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg text-lg">
-                    <span className="mr-2">📝</span>
-                    Google Form
-                  </Button>
+                 <a
+                    href="https://forms.gle/SjVnkwewqAASakyU7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button className="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg text-lg">
+                      <span className="mr-2">📝</span>
+                      Google Form
+                    </Button>
+                  </a>
+
                   <div className="mt-6 text-sm text-blue-100">
                     <p><strong>Registration Deadline:</strong> August 10th, 2025</p>
                     <p><strong>Contact:</strong> Mrs. S. Jyotsna (SPOC)</p>
@@ -309,7 +340,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-2">Venue</h4>
-                      <p className="text-gray-700">A Seminar Hall + Classrooms/Auditorium space with projector access for Day 1 and Day 3</p>
+                      <p className="text-gray-700">Seminar Hall</p>
                     </div>
                   </CardContent>
                 </Card>
