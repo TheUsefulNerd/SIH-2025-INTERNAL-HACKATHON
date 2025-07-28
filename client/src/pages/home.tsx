@@ -73,7 +73,7 @@ export default function Home() {
               </a>
               <div className="flex items-center bg-white bg-opacity-20 backdrop-blur-sm rounded-lg px-4 py-2 text-sm text-white border border-white border-opacity-30">
                 <User className="mr-2 h-4 w-4" />
-                <span><strong>SPOC: Mrs. S. Jyotsna</strong> - </span>
+                <span><strong>SPOC: Mrs. S. Jyotsna</strong>(Assistant Professor, CSE(Data Science))</span>
               </div>
             </div>
             <div className="mt-12 text-sm text-blue-100">
