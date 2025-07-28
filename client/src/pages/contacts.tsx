@@ -44,12 +44,12 @@ export default function Contacts() {
                 <div className="w-24 h-24 bg-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <User className="text-white h-10 w-10" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">-</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2"> Mrs. S. Jyotsna </h3>
                 <p className="text-blue-600 font-medium mb-4">Assistant Professor</p>
                 <div className="space-y-2 text-sm text-gray-600">
                   <div className="flex items-center justify-center">
                     <Phone className="mr-2 h-4 w-4 text-blue-600" />
-                    <span> - </span>
+                    <span>+91 9494409907</span>
                   </div>
                 </div>
               </CardContent>
@@ -64,9 +64,9 @@ export default function Contacts() {
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Faculty Coordinators</h2>
           <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4">
             {[
-              { name: "Mrs. S. Jyotsna", designation: "Assistant Professor", dept: "CSE (Data Science)", phone: "+91 94944 09907" },
+              { name: "Mrs. S. Jyotsna", designation: "Assistant Professor", dept: "CSE (Data Science)", phone: "+91 9494409907" },
               { name: "-", designation: "Assistant Professor",  dept: "CSE (AIML)", phone: "-" },
-              { name: "-", designation: "Assistant Professor", dept: "CSE (Cybersecurity)", phone: "-" },
+              { name: "Vamshi Krishna", designation: "Assistant Professor", dept: "CSE (Cybersecurity)", phone: "+91 9652778214" },
               { name: "-", designation: "Assistant Professor",  dept: "CSE", phone: "-" },
               { name: "-", designation: "Assistant Professor", dept: "CSE (IOT)", phone: "-" },
               { name: "-", designation: "Assistant Professor", dept: "CSE (AI&DS)", phone: "-" },
