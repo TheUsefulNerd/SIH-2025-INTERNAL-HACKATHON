@@ -77,7 +77,7 @@ export default function Home() {
               </div>
             </div>
             <div className="mt-12 text-sm text-blue-100">
-              <div className="flex items-cente bg-amber-400 bg-opacity-20 backdrop-blur-sm rounded-lg px-4 py-2 text-sm text-white border border-white border-opacity-30">
+              <div className="flex items-center justify-center bg-amber-400 bg-opacity-20 backdrop-blur-sm rounded-lg px-2 py-1 text-sm text-white border border-white border-opacity-30">
                 <Calendar className="mr-2 h-4 w-4" />
                 <span><strong>Deadline for Registrations:</strong>10th August 2025</span>
               </div>
