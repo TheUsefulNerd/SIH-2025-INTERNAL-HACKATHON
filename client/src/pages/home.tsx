@@ -61,8 +61,8 @@ export default function Home() {
               </span>
             </div>
             <p className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed">
-              Join our Internal Hackathon to represent SVIT in SIH 2025. 
-              Showcase your Innovation, Collaborate with Peers, and Build Solutions that matter.
+              <strong>Join our Internal Hackathon to represent SVIT in SIH 2025. 
+              Showcase your Innovation, Collaborate with Peers, and Build Solutions that matter.</strong>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a href="#registration">
