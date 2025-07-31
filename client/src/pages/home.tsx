@@ -81,7 +81,6 @@ export default function Home() {
                 <Calendar className="mr-2 h-4 w-4" />
                 <span><strong>Deadline for Registrations:</strong>10th August 2025</span>
               </div>
-              <p><strong>Deadline for Registrations:</strong>10th August 2025</p>
               <p><strong>Organized by:</strong> Department of CSE (Data Science)</p>
             </div>
           </div>
