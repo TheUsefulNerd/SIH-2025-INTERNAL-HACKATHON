@@ -65,11 +65,11 @@ export default function Contacts() {
           <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4">
             {[
               { name: "Mrs. S. Jyotsna", designation: "Assistant Professor", dept: "CSE (Data Science)", phone: "+91 9494409907" },
-              { name: "-", designation: "Assistant Professor",  dept: "CSE (AIML)", phone: "-" },
-              { name: "Vamshi Krishna", designation: "Assistant Professor", dept: "CSE (Cybersecurity)", phone: "+91 9652778214" },
+              { name: "Mrs. Meher Unnisa", designation: "Assistant Professor",  dept: "CSE (AIML)", phone: "-" },
+              { name: "Mr. Vamshi Krishna", designation: "Assistant Professor", dept: "CSE (Cybersecurity)", phone: "+91 9652778214" },
               { name: "-", designation: "Assistant Professor",  dept: "CSE", phone: "-" },
               { name: "-", designation: "Assistant Professor", dept: "CSE (IOT)", phone: "-" },
-              { name: "-", designation: "Assistant Professor", dept: "CSE (AI&DS)", phone: "-" },
+              { name: "Mr. Sai Baba", designation: "Assistant Professor", dept: "CSE (AI&DS)", phone: "-" },
              
               
             ].map((coordinator, index) => (
@@ -103,10 +103,12 @@ export default function Contacts() {
             {[
               { name: "Rishab Jain", year: "4th Year", dept: "CSE (Data Science)", phone: "+91 97045 26359" },
               { name: "Manchikanti Prachatih", year: "3rd Year", dept: "CSE (Data Science)", phone: "+91 83748 65356" },
-              { name: "-", year: "-", dept: "CSE (Cybersecurity)", phone: "-" },
+              { name: "Ali Shebaaz", year: "4th Year", dept: "CSE (Cybersecurity)", phone: "+91 6309 700 676" },
+              { name: "Aniket Shinde", year: "4th Year", dept: "CSE (Cybersecurity)", phone: "+91 83673 55731" },
               { name: "-", year: "-", dept: "CSE", phone: "-" },
               { name: "-", year: "-", dept: "CSE(IOT)", phone: "-" },
-              { name: "-", year: "-", dept: "CSE (AI&DS)", phone: "-" },
+              { name: "Dinesh", year: "4th Year", dept: "CSE (AI&DS)", phone: "-" },
+              { name: "Sandeep", year: "4th Year", dept: "CSE (AI&DS)", phone: "-" },
               { name: "-", year: "-", dept: "CSE(AIML)", phone: "-" },
               
             ].map((coordinator, index) => (
