@@ -104,7 +104,7 @@ export default function Contacts() {
               { name: "Rishab Jain", year: "4th Year", dept: "CSE (Data Science)", phone: "+91 97045 26359" },
               { name: "Manchikanti Prachatih", year: "3rd Year", dept: "CSE (Data Science)", phone: "+91 83748 65356" },
               { name: "Ali Shebaaz", year: "4th Year", dept: "CSE (Cybersecurity)", phone: "+91 6309 700 676" },
-              { name: "Aniket Shinde", year: "4th Year", dept: "CSE (Cybersecurity)", phone: "+91 83673 55731" },
+              { name: "Aniket Shinde", year: "4th Year", dept: "CSE (Cybersecurity)", phone: "+91 93224 23706" },
               { name: "-", year: "-", dept: "CSE", phone: "-" },
               { name: "-", year: "-", dept: "CSE(IOT)", phone: "-" },
               { name: "Dinesh", year: "4th Year", dept: "CSE (AI&DS)", phone: "-" },
